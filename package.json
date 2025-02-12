@@ -1,0 +1,24 @@
+{
+  "name": "merncrash",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "dev": "npx cross-env NODE_ENV=development nodemon backend/server.js",
+  "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+  "start": "npx cross-env NODE_ENV=production node backend/server.js"
+},
+
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
